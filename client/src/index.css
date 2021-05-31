@@ -1,13 +1,151 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-info {
+  color: #2020a0;
+  background-color: #8989a0;
+}
+
+.alert-danger {
+  color: #a02020;
+  background-color: #ffe0e0;
+}
+
+.alert-success {
+  color: #20a0a0;
+  background-color: #eeffe0;
+}
+
+.alert-warning {
+  color: #ffa500;
+  background-color: #eeffe0;
+}
+
+.rating span {
+  color: #ecb00a;
+  margin: 0.1rem;
+}
+
+.rating span:last-child {
+  color: #404040;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100%;
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-area: "header";
+  background-color: #203040;
+}
+
+main {
+  grid-area: "main";
+  padding: 1rem;
+}
+
+footer {
+  grid-area: "footer";
+  background-color: #203040;
+  color: #ffffff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.brand {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: #ecb00a;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card__body {
+  border: 1px solid rgb(243, 237, 237);
+  width: 300px;
+  /* height: 300px; */
+  margin-left: 30px;
+  margin-top: 26px;
+  background-color: whitesmoke;
+  box-shadow: 3px 2px 7px 0px #937a7a;
+  border-radius: 3px;
+}
+
+.card__body img {
+  height: 275px;
+  width: 93%;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
 }

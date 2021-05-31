@@ -39,6 +39,7 @@ app.get(
   "/api/products",
   express_async_handler(async (req, res) => {
     const products = await Product.find();
+    console.log(products);
     res.send(products);
   }),
 );
