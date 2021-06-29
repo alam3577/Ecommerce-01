@@ -18,7 +18,7 @@ class Products extends Component<IProps, IState> {
         <div className="card__container">
           {this.props.arr.map((prod, index) => (
             <div className="card__body" key={index}>
-              <NavLink to="/" exact={true} strict>
+              <NavLink to={`/product/${prod._id}`} exact={true} strict>
                 <img src={prod.image} alt={prod.name}></img>
               </NavLink>
               <div className="card-body">

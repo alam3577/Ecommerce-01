@@ -1,0 +1,35 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 5rem;
+  box-shadow: 2px 2px 11px 0px blue;
+  border-radius: 7px;
+}
+.input {
+  margin: 1rem;
+}
+.main__container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 1px 1px 5px 0px blue;
+  border: 0px;
+}
+
+button {
+  border-radius: 6px;
+  cursor: pointer;
+  background: #483ef9;
+  color: white;
+  font-size: inherit;
+  padding: 7px;
+  border: 0px;
+}

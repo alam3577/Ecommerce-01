@@ -2,3 +2,4 @@ URL :-mongodb+srv://root:root@cluster0.g3f4w.mongodb.net/ecom-9am?retryWrites=tr
 gitUrl :- https://github.com/alam3577/Ecommerce-01.git
 
 
+profilepic:https://ecom-9am.s3.ap-south-1.amazonaws.com/profile.jpg

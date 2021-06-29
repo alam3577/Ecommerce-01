@@ -7,9 +7,15 @@ import { applyMiddleware, combineReducers, createStore } from "redux";
 import ProductReducer from "./reducer/ProductReducer";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
+import detailsReducer from "./reducer/DetailReducer";
+import CartReducer from "./reducer/CartReducer";
+import { SigninReducer } from "./reducer/SigninReducer";
 
 const rootReducer = combineReducers({
   products: ProductReducer,
+  details: detailsReducer,
+  cart: CartReducer,
+  signin: SigninReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
