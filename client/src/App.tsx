@@ -25,7 +25,7 @@ class App extends Component<IProps, IState> {
             <header className="row">
               <div>
                 <NavLink to="/" exact={true} strict className="brand">
-                  AshokIT
+                  Sajjad
                 </NavLink>
               </div>
 
